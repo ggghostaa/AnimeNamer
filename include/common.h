@@ -17,6 +17,21 @@ struct VideoInfo {
   std::string filename_;
   std::string path_;
 };
+
+struct SubititleInfo {
+    std::string video_filename_;
+    unsigned int episode_no_;
+    unsigned int season_no_;
+    std::string type_;
+    std::string filename_;
+    std::string path_;
+    std::string language_;
+    /* data */
+};
+
+
+
+
 struct ParamsIn {
   std::string season_no_;
 };
