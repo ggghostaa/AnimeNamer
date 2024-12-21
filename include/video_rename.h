@@ -6,6 +6,10 @@
 
 #include "Temp.h"
 #include <stdio.h>
+#include <string>
+#include <filesystem>
+
+namespace fs = std::filesystem;
 
 class VideoRename
 {
@@ -18,6 +22,8 @@ private:
     void SortVideo();
     void Print();
     void RestartInfo();
+    bool IsVideo(const std::string& filename);
+    VideoInfo GetVideoInfo(const fs::path& path);
     
 public:
     VideoRename(const std::string& path);
